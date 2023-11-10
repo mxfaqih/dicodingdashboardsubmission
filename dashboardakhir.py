@@ -19,9 +19,6 @@ with st.sidebar:
 
 st.header('Brazilian E-commerce Dashboard')
 
-st.subheader('Data Overview')
-st.write(main_data.head())
-
 st.subheader('Distribusi Status Order')
 status_counts = main_data['order_status'].value_counts()
 st.bar_chart(status_counts)
